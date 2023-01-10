@@ -1,25 +1,28 @@
 package model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity(name = "students")
 public class Student {
 
-    @Id
-    private int  student_id;
-
+    private Integer student_id;
     private String name;
     private String lastname;
-    private String patronimyc;
-    private String date;
+    private String patronymic;
+    private String birthdate;
     private String group_name;
 
-    public int getStudent_id() {
+    public Student(Integer student_id, String name, String lastname, String patronymic, String birthdate, String group_name) {
+        this.student_id = student_id;
+        this.name = name;
+        this.lastname = lastname;
+        this.patronymic = patronymic;
+        this.birthdate = birthdate;
+        this.group_name = group_name;
+    }
+
+    public Integer getStudent_id() {
         return student_id;
     }
 
-    public void setStudent_id(int student_id) {
+    public void setStudent_id(Integer student_id) {
         this.student_id = student_id;
     }
 
@@ -39,20 +42,20 @@ public class Student {
         this.lastname = lastname;
     }
 
-    public String getPatronimyc() {
-        return patronimyc;
+    public String getPatronymic() {
+        return patronymic;
     }
 
-    public void setPatronimyc(String patronimyc) {
-        this.patronimyc = patronimyc;
+    public void setPatronymic(String patronymic) {
+        this.patronymic = patronymic;
     }
 
-    public String getDate() {
-        return date;
+    public String getBirthdate() {
+        return birthdate;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
     }
 
     public String getGroup_name() {
