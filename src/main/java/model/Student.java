@@ -9,8 +9,7 @@ public class Student {
     private String birthdate;
     private String group_name;
 
-    public Student(Integer student_id, String name, String lastname, String patronymic, String birthdate, String group_name) {
-        this.student_id = student_id;
+    public Student(String name, String lastname, String patronymic, String birthdate, String group_name) {
         this.name = name;
         this.lastname = lastname;
         this.patronymic = patronymic;

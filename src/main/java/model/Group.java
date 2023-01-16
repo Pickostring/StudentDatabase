@@ -10,8 +10,7 @@ public class Group {
 
     private String faculty;
 
-    public Group(Integer group_id, String group_name, Integer group_number, String faculty) {
-        this.group_id = group_id;
+    public Group(String group_name, Integer group_number, String faculty) {
         this.group_name = group_name;
         this.group_number = group_number;
         this.faculty = faculty;
